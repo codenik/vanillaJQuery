@@ -1,4 +1,6 @@
-  const v$ = (el) => document.querySelector(el);
+alert('inside vanilla script'); 
+
+const v$ = (el) => document.querySelector(el);
 
   const v$$ = (el) => document.querySelectorAll(el);
 
