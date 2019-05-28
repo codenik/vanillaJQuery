@@ -1,16 +1,15 @@
-alert('inside vanilla script'); 
+n$ = (el) => document.querySelector(el);
+n$$ = (el) => document.querySelectorAll(el);
 
-const v$ = (el) => document.querySelector(el);
+a$$ = (el) => Array.from(n$$(el));
 
-  const v$$ = (el) => document.querySelectorAll(el);
+a$$t = (el) => a$$(el).map(el => el.innerText);
+a$$s = (el) => a$$(el).map(el => el.src);
+a$$h = (el) => a$$(el).map(el => el.href);
 
-  const vr$$ = (el) => Array.from(document.querySelectorAll(el));
+a$$a = (el, attr) => a$$(el).map(el => el[attr]);
 
-  const vt$$ = (el) => Array.from(document.querySelectorAll(el)).map(el => el.innerText);
-
-  const va$$ = (el, attr) => Array.from(document.querySelectorAll(el)).map(el => el[attr]);
-
-  const vf$$ = (el, attr, val) => Array.from(document.querySelectorAll(el)).filter(el => el[attr] == val);
-
-  const vf1$$ = (el, attr, val) => Array.from(document.querySelectorAll(el)).filter(el => el[attr].startsWith(val));
-  
+a$$f = (el, attr, val) => a$$(el).filter(el => el[attr] == val);
+a$$f1 = (el, attr, val) => a$$(el).filter(el => el[attr].startsWith(val));
+a$$f5 = (el, attr, val) => a$$(el).filter(el => el[attr].includes(val));
+a$$f9 = (el, attr, val) => a$$(el).filter(el => el[attr].endsWith(val));
