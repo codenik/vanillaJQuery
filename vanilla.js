@@ -2,7 +2,7 @@ n$ = (el) => document.querySelector(el);
 n$$ = (el) => document.querySelectorAll(el);
 
 a$$ = (el) => Array.from(n$$(el));
-x = 10;
+x = 11;
 a$$t = (el) => a$$(el).map(el => el.innerText);
 a$$s = (el) => a$$(el).map(el => el.src);
 a$$h = (el) => a$$(el).map(el => el.href);
